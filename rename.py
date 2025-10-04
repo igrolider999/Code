@@ -6,7 +6,7 @@ file = next(p.glob(filename + ".*"), None)
 
 if file.exists() is True:
 	file.rename(file.with_suffix(".py"))
-    print(f"Renamed {file} to {file.stem}.txt")
+	print(f"Renamed {file} to {file.stem}.txt")
 else:
 	print(None)
 
